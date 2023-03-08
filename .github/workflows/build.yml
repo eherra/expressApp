@@ -21,4 +21,4 @@ jobs:
       uses: docker/build-push-action@v4
       with:
         push: true
-        tags: 23232323232323232323/expressApp:latest
+        tags: 23232323232323232323/expressapp:latest
