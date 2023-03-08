@@ -1,18 +1,16 @@
 version: "3.8"
 
 services:
-  express-app:
+  expressapp:
     platform: linux/amd64
-    build:
-      context: ./
-      dockerfile: Dockerfile
+    image: 23232323232323232323/expressapp
     ports:
       - 8080:8080
-    container_name: express-app
+    container_name: expressapp
 
   watchtower:
     image: containrrr/watchtower
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     container_name: watchtower
-    command: --interval 60 express-app
+    command: --interval 60 expressapp
