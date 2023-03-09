@@ -6,5 +6,5 @@ COPY . .
 RUN npm install && \
     adduser --system --no-create-home nonroot
 
-USER adduser
+USER nonroot
 CMD node index.js
